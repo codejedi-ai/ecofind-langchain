@@ -21,9 +21,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import React from "react"
 import ReactDOM from 'react-dom/client';
-
-import logo from './logo.svg';
-
 import { formatConvHistory } from './utils/formatConvHistory';
 import Chatbox from './Chatbox.js';
 import { ChatOpenAI } from 'langchain/chat_models/openai'
@@ -32,7 +29,6 @@ import { StringOutputParser } from 'langchain/schema/output_parser'
 import { retriever } from './utils/retriever'
 import { combineDocuments } from './utils/combineDocuments'
 import { RunnablePassthrough, RunnableSequence } from "langchain/schema/runnable"
-import { ConsoleCallbackHandler } from 'langchain/callbacks';
 
 document.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -119,4 +115,5 @@ root.render(<Chatbox />);
 
 // ReactDOM.render(<Resume />, document.getElementById("Resume"))
 // AWSCerts
+reportWebVitals();
 export { progressConversation }
