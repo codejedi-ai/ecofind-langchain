@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/my-resume/static/css/main.1a14645f.css",
-    "main.js": "/my-resume/static/js/main.a6ab0bbc.js",
-    "index.html": "/my-resume/index.html",
-    "main.1a14645f.css.map": "/my-resume/static/css/main.1a14645f.css.map",
-    "main.a6ab0bbc.js.map": "/my-resume/static/js/main.a6ab0bbc.js.map"
+    "main.css": "/scrimba-langchain/static/css/main.0b1afc40.css",
+    "main.js": "/scrimba-langchain/static/js/main.bbbfd2e3.js",
+    "static/js/952.007d0eaa.chunk.js": "/scrimba-langchain/static/js/952.007d0eaa.chunk.js",
+    "static/media/scrimba-bg.jpeg": "/scrimba-langchain/static/media/scrimba-bg.375be91e3ae1796617c1.jpeg",
+    "static/media/logo-scrimba.svg": "/scrimba-langchain/static/media/logo-scrimba.8f2decb487ebf8c563726e431126eeff.svg",
+    "static/media/logo.svg": "/scrimba-langchain/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/scrimba-langchain/index.html",
+    "static/media/send.svg": "/scrimba-langchain/static/media/send.a80eec23bdd148e783bb695af8942bf5.svg",
+    "main.0b1afc40.css.map": "/scrimba-langchain/static/css/main.0b1afc40.css.map",
+    "main.bbbfd2e3.js.map": "/scrimba-langchain/static/js/main.bbbfd2e3.js.map",
+    "952.007d0eaa.chunk.js.map": "/scrimba-langchain/static/js/952.007d0eaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a14645f.css",
-    "static/js/main.a6ab0bbc.js"
+    "static/css/main.0b1afc40.css",
+    "static/js/main.bbbfd2e3.js"
   ]
 }
