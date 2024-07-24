@@ -25,7 +25,7 @@ import ReactDOM from 'react-dom/client';
 import logo from './logo.svg';
 
 import { formatConvHistory } from './utils/formatConvHistory';
-import Chatbox from './chatbox.js';
+import Chatbox from './Chatbox.js';
 import { ChatOpenAI } from 'langchain/chat_models/openai'
 import { PromptTemplate } from 'langchain/prompts'
 import { StringOutputParser } from 'langchain/schema/output_parser'
