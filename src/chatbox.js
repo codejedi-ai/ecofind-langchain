@@ -1,5 +1,5 @@
 import React from 'react';
-import './chatbox.css';
+import './Chatbox.css';
 import logoScrimba from './images/logo-scrimba.svg';
 import sendIcon from './images/send.svg';
 
