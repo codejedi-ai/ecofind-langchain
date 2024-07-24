@@ -22,21 +22,15 @@ import reportWebVitals from './reportWebVitals';
 import React from "react"
 import ReactDOM from 'react-dom/client';
 
-/**
-Mini Challenge:
-Move the `header` element from Page into 
-its own component called "Header"
-*/
-
 import logo from './logo.svg';
 
-import { formatConvHistory } from './assets/utils/formatConvHistory';
-import Chatbox from './Chatbox.js';
+import { formatConvHistory } from './utils/formatConvHistory';
+import Chatbox from './chatbox.js';
 import { ChatOpenAI } from 'langchain/chat_models/openai'
 import { PromptTemplate } from 'langchain/prompts'
 import { StringOutputParser } from 'langchain/schema/output_parser'
-import { retriever } from './assets/utils/retriever'
-import { combineDocuments } from './assets/utils/combineDocuments'
+import { retriever } from './utils/retriever'
+import { combineDocuments } from './utils/combineDocuments'
 import { RunnablePassthrough, RunnableSequence } from "langchain/schema/runnable"
 import { ConsoleCallbackHandler } from 'langchain/callbacks';
 
