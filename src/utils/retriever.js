@@ -1,13 +1,12 @@
 import { SupabaseVectorStore } from 'langchain/vectorstores/supabase'
-import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
 import { createClient } from '@supabase/supabase-js'
-
-const openAIApiKey = process.env.REACT_APP_OPENAI_API_KEY
-
+import { openAIApiKey, supabaseApiKey, supabaseUrl } from './getsecrets.js'
+import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
+// const openAIApiKey = process.env.REACT_APP_OPENAI_API_KEY
 const embeddings = new OpenAIEmbeddings({ openAIApiKey })
-const sbApiKey = process.env.REACT_APP_SUPABASE_API_KEY
-const sbUrl = process.env.REACT_APP_SUPABASE_URL_LC_CHATBOT
-const client = createClient(sbUrl, sbApiKey)
+
+
+const client = createClient(supabaseUrl, supabaseApiKey)
 
 const vectorStore = new SupabaseVectorStore(embeddings, {
     client,
