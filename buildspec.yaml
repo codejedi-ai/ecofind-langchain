@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - echo Installing Node.js packages...
+      - npm install
+  pre_build:
+    commands:
+      - echo Running npm test...
+      - npm test
+  build:
+    commands:
+      - echo Running npm build...
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed!!
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build # Specify the directory where the build output is located
+
+cache:
+  paths:
+    - node_modules/**/* # Cache node_modules to speed up subsequent builds
