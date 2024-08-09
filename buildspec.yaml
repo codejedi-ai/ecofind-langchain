@@ -20,7 +20,7 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: build # Specify the directory where the build output is located
+  base-directory: dist # Specify the directory where the build output is located
 
 cache:
   paths:
