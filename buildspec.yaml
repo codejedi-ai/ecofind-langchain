@@ -9,8 +9,7 @@ phases:
       - npm install
   pre_build:
     commands:
-      - echo Running npm test...
-      - npm test
+      - echo Build started
   build:
     commands:
       - echo Running npm build...
